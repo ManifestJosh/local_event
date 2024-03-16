@@ -46,13 +46,18 @@ class HomePage extends StatelessWidget {
                       style: whiteHeadTextStyle,
                     ),
                   ),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: <Widget>[
-                        for (final category in categories)
-                          CategoryWidget(category: category)
-                      ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 25.0),
+                    child: Consumer<AppState>(
+                      builder: (context, appState, _) => SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: <Widget>[
+                            for (final category in categories)
+                              CategoryWidget(category: category)
+                          ],
+                        ),
+                      ),
                     ),
                   )
                 ],

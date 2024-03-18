@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:local_event/app_state.dart';
 import 'package:local_event/ui/homepage/category_widgets.dart';
+import 'package:local_event/ui/homepage/event_details/events.dart';
 import 'package:provider/provider.dart';
 import '../../model/category.dart';
 import '../../styleguide.dart';
+import 'event_widget.dart';
 import 'home_pagebackground.dart';
 
 class HomePage extends StatelessWidget {
@@ -62,7 +64,11 @@ class HomePage extends StatelessWidget {
                   ),
                   Column(
                     children: <Widget>[
-                      for (final event )
+                      for (final event in events.where((e) =>
+                          e.categoryIds.contains(appState.selectedCategoryId)))
+                        EventWidget(
+                          event: event,
+                        )
                     ],
                   )
                 ],

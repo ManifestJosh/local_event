@@ -59,6 +59,11 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
+                  ),
+                  Column(
+                    children: <Widget>[
+                      for (final event )
+                    ],
                   )
                 ],
               ),

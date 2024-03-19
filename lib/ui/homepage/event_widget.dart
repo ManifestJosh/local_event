@@ -26,9 +26,11 @@ class EventWidget extends StatelessWidget {
                   fit: BoxFit.fitWidth,
                 ),
               ),
-              Row(
-                children: <Widget>[
-                  Expanded(
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0),
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
                       flex: 3,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -53,8 +55,19 @@ class EventWidget extends StatelessWidget {
                             ],
                           )
                         ],
-                      ))
-                ],
+                      ),
+                    ),
+                    Expanded(
+                        flex: 1,
+                        child: Text(
+                          event.duration.toUpperCase(),
+                          textAlign: TextAlign.right,
+                          style: eventLocationTextStyle.copyWith(
+                            fontWeight: FontWeight.w900,
+                          ),
+                        )),
+                  ],
+                ),
               )
             ],
           )),

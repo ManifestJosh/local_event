@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:local_event/app_state.dart';
 import 'package:local_event/ui/homepage/category_widgets.dart';
-import 'package:local_event/ui/homepage/event_details/events.dart';
+import 'package:local_event/model/events.dart';
 import 'package:provider/provider.dart';
 import '../../model/category.dart';
 import '../../styleguide.dart';

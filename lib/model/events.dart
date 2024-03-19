@@ -21,7 +21,7 @@ class Event {
 }
 
 final fiveKmRunEvent = Event(
-    imagePath: "assets/event_images/5_km_downtown_run.jpeg",
+    imagePath: "assets/events/5km_downtown_run.jpg",
     title: "5 Kilometer Downtown Run",
     description: "",
     location: "Pleasant Park",
@@ -32,26 +32,25 @@ final fiveKmRunEvent = Event(
     categoryIds: [0, 1]);
 
 final cookingEvent = Event(
-    imagePath: "assets/event_images/granite_cooking_class.jpeg",
+    imagePath: "assets/events/granite_cooking.jpg",
     title: "Granite Cooking Class",
     description:
-        "Guest list fill up fast so be sure to apply before handto secure a spot.",
+        "Guest list fill up fast so be sure to apply before hand to secure a spot.",
     location: "Food Court Avenue",
     duration: "4h",
     punchLine1: "Granite Cooking",
-    punchLine2: "The latest fad in foodology, get the inside scoup.",
+    punchLine2: "The latest fad in foodology, get the inside scoop.",
     categoryIds: [
       0,
       2
     ],
     galleryImages: [
-      "assets/event_images/cooking_1.jpeg",
-      "assets/event_images/cooking_2.jpeg",
-      "assets/event_images/cooking_3.jpeg"
+      "assets/events/cooking_pics_1.jpg",
+      "assets/events/cooking_pics_2.jpg",
     ]);
 
 final musicConcert = Event(
-    imagePath: "assets/event_images/music_concert.jpeg",
+    imagePath: "assets/events/music_concert.jpg",
     title: "Arijit Music Concert",
     description: "Listen to Arijit's latest compositions.",
     location: "D.Y. Patil Stadium, Mumbai",
@@ -59,9 +58,8 @@ final musicConcert = Event(
     punchLine1: "Music Lovers!",
     punchLine2: "The latest fad in foodology, get the inside scoup.",
     galleryImages: [
-      "assets/event_images/cooking_1.jpeg",
-      "assets/event_images/cooking_2.jpeg",
-      "assets/event_images/cooking_3.jpeg"
+      "assets/events/cooking_pics_1.jpg",
+      "assets/events/cooking_pics_2.jpg",
     ],
     categoryIds: [
       0,
@@ -69,7 +67,7 @@ final musicConcert = Event(
     ]);
 
 final golfCompetition = Event(
-    imagePath: "assets/event_images/golf_competition.jpeg",
+    imagePath: "assets/events/golf_competition.jpg",
     title: "Season 2 Golf Estate",
     description: "",
     location: "NSIC Ground, Okhla",
@@ -77,9 +75,8 @@ final golfCompetition = Event(
     punchLine1: "Golf!",
     punchLine2: "The latest fad in foodology, get the inside scoup.",
     galleryImages: [
-      "assets/event_images/cooking_1.jpeg",
-      "assets/event_images/cooking_2.jpeg",
-      "assets/event_images/cooking_3.jpeg"
+      "assets/event_images/cooking_pics_1.jpg",
+      "assets/event_images/cooking_pics_2.jpg",
     ],
     categoryIds: [
       0,

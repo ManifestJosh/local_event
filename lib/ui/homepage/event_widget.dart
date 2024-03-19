@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:local_event/styleguide.dart';
-import 'package:local_event/ui/homepage/event_details/events.dart';
+import 'package:local_event/model/events.dart';
 
 class EventWidget extends StatelessWidget {
   final Event event;
@@ -27,7 +27,7 @@ class EventWidget extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 8.0),
+                padding: const EdgeInsets.only(top: 8.0, left: 8.0),
                 child: Row(
                   children: <Widget>[
                     Expanded(

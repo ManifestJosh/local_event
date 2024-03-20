@@ -21,13 +21,13 @@ final TextStyle categoryTextStyle = TextStyle(
 final TextStyle selectedCategoryTextStyle =
     categoryTextStyle.copyWith(color: Color(0xFFFF4700));
 
-final TextStyle evenTitleTextStyle = TextStyle(
-  fontSize: 24.0,
+final TextStyle eventTitleTextStyle = TextStyle(
+  fontSize: 20.0,
   fontWeight: FontWeight.bold,
   color: Color(0xFF000000),
 );
 
-final TextStyle evenWhiteTitleTextStyle = TextStyle(
+final TextStyle eventWhiteTitleTextStyle = TextStyle(
   fontSize: 38.0,
   fontWeight: FontWeight.bold,
   color: Color(0x99FFFFFF),

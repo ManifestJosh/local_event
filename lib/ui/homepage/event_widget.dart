@@ -37,22 +37,24 @@ class EventWidget extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             event.title,
-                            style: evenTitleTextStyle,
+                            style: eventTitleTextStyle,
                           ),
                           SizedBox(
                             height: 10,
                           ),
-                          Row(
-                            children: <Widget>[
-                              Icon(Icons.location_on),
-                              SizedBox(
-                                width: 5,
-                              ),
-                              Text(
-                                event.location,
-                                style: eventLocationTextStyle,
-                              )
-                            ],
+                          FittedBox(
+                            child: Row(
+                              children: <Widget>[
+                                Icon(Icons.location_on),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Text(
+                                  event.location,
+                                  style: eventLocationTextStyle,
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),

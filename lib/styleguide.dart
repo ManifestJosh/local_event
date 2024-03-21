@@ -44,8 +44,14 @@ final TextStyle guestTextStyle = TextStyle(
   color: Color(0xFF000000),
 );
 
-final TextStyle punchLineTextStyle = TextStyle(
+final TextStyle punchLine1TextStyle = TextStyle(
   fontSize: 28.0,
   fontWeight: FontWeight.w800,
   color: Color(0xFFFF4700),
+);
+
+final TextStyle punchLine2TextStyle = TextStyle(
+  fontSize: 28.0,
+  fontWeight: FontWeight.w800,
+  color: Colors.black,
 );
